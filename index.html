@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gael Sánchez | Soluciones de Inteligencia Artificial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Gael Sánchez</a>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Home -->
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Soluciones de inteligencia artificial personalizadas para empresas y profesionales.</h1>
+            <p>Desarrollo asistentes inteligentes, automatizo procesos y conecto modelos de IA con acciones reales.</p>
+            <h3>¿Buscas aplicar IA en tu negocio o proyecto? Yo puedo ayudarte.</h3>
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn btn-primary">Ver servicios</a>
+                <a href="#proyectos" class="btn btn-secondary">Ver proyectos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Servicios -->
+        <section id="servicios" class="section">
+            <div class="container">
+                <h2 class="section-title">Qué hago</h2>
+                <p class="section-intro">
+                    Apoyo a empresas y profesionales a implementar inteligencia artificial de forma útil, segura y adaptada a sus necesidades. No necesitas saber programar ni tener equipo técnico especializado.
+                </p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>🤖 Asistentes inteligentes personalizados</h3>
+                        <p>Para atención al cliente, fiscal, soporte técnico, ventas, etc.</p>
+                        <ul>
+                            <li>Entrenados con tus documentos, políticas o manuales.</li>
+                            <li>Totalmente privados.</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>🔁 Automatización con agentes IA</h3>
+                        <p>Generación automática de contenido, respuestas, reportes, correos.</p>
+                        <ul>
+                            <li>Conexión a herramientas internas (Google Docs, CRMs, APIs, etc.).</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>🧱 Infraestructura privada de IA</h3>
+                        <p>Alojamiento de modelos propios (LLMs) y almacenamiento vectorial (RAG).</p>
+                        <ul>
+                            <li>Configuración segura y escalable.</li>
+                            <li>Interfaz web de chat personalizada para uso interno.</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>🧠 Consultoría técnica y asesoría</h3>
+                        <p>Te ayudo a explorar cómo aplicar IA en tus procesos.</p>
+                        <ul>
+                            <li>Diseño de flujos, asesoramiento técnico y desarrollo a medida.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cta-section">
+                    <h4>¿Tienes una idea o necesidad específica? Escríbeme.</h4>
+                    <a href="#contacto" class="btn btn-primary">Agenda una llamada</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Proyectos Recientes</h2>
+                <p class="section-intro">Aquí algunos ejemplos de lo que he desarrollado recientemente.</p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h4>📌 Generador de requerimientos MoSCoW</h4>
+                        <p>Convierte descripciones en texto en una matriz de requerimientos funcionales priorizados.</p>
+                        <span class="tech-tag">OpenAI API</span>
+                        <p class="project-ideal">💡 Útil para equipos que definen requerimientos de forma informal.</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>📌 Asistente de investigación profunda</h4>
+                        <p>Agente capaz de hacer búsquedas detalladas y organizadas sobre temas complejos.</p>
+                        <span class="tech-tag">OpenAI SDK</span>
+                        <p class="project-ideal">💡 Ideal para equipos legales, fiscales o académicos.</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>📌 Generador de contenido para redes sociales</h4>
+                        <p>Crea publicaciones para distintas plataformas según el tono de marca.</p>
+                        <span class="tech-tag">CrewAI</span>
+                        <p class="project-ideal">💡 Perfecto para negocios sin un equipo de marketing dedicado.</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>📌 Adaptador inteligente de CVs a vacantes</h4>
+                        <p>Ajusta un CV extenso a vacantes específicas con base en un perfil detallado.</p>
+                        <span class="tech-tag">LangGraph</span>
+                        <p class="project-ideal">💡 Útil para reclutadores o candidatos con mucha experiencia.</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>📌 Servidor de acciones MCP</h4>
+                        <p>Permite que los asistentes de IA ejecuten tareas: enviar correos, consultar APIs, etc.</p>
+                        <span class="tech-tag">FastAPI + OpenAI</span>
+                        <p class="project-ideal">💡 Base para asistentes empresariales que actúan, no solo hablan.</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>📌 Linter inteligente de código</h4>
+                        <p>Herramienta que revisa código y da retroalimentación en lenguaje natural.</p>
+                        <span class="tech-tag">AutoGen</span>
+                        <p class="project-ideal">💡 Útil para equipos técnicos o estudiantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="sobre-mi" class="section">
+            <div class="container about-container">
+                <img src="assets/me.png" alt="Foto de Gael Sánchez" class="profile-pic">
+                <div class="about-text">
+                    <h2 class="section-title">Soy Gael Sánchez</h2>
+                    <p>Desarrollador apasionado por la inteligencia artificial, los agentes inteligentes y la automatización útil.</p>
+                    <p>Egresado de <strong>Universidad Autónoma de Baja California</strong>, trabajo actualmente en una empresa de tecnología desarrollando interfaces para modelos de lenguaje (LLMs), donde también conecto modelos privados con herramientas como OpenAI.</p>
+                    <p>En paralelo, construyo herramientas prácticas que muestran cómo la IA puede transformar procesos empresariales reales.</p>
+                    <p><strong>🤝 Estoy abierto a colaboraciones, proyectos freelance o asesorías.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section bg-dark">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-intro">¿Tienes una idea? ¿Quieres automatizar algo? ¡Hablemos!</p>
+                <p class="contact-email">Puedes escribirme a: <a href="mailto:gahasadu@gmail.com">gahasadu@gmail.com</a></p>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Desarrollado por Gael Sánchez | © 2025</p>
+            <p>Hecho con 💻 y mucha curiosidad.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

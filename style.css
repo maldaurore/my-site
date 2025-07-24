@@ -1,0 +1,340 @@
+/* --- Variables y Estilos Globales --- */
+:root {
+  --primary-color: #00bcd4; /* Cian para acentos y botones */
+  --secondary-color: #0097a7; /* Cian más oscuro para hover */
+  --dark-bg: #1a202c;         /* Fondo oscuro para secciones */
+  --light-bg: #f8f9fa;       /* Fondo claro para secciones */
+  --text-color: #333;         /* Color de texto principal */
+  --light-text: #f1f1f1;      /* Color de texto para fondos oscuros */
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-intro {
+  font-size: 1.1em;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+/* --- Navegación --- */
+.navbar {
+  background-color: rgba(26, 32, 44, 0.9);
+  color: var(--light-text);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: var(--light-text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* --- Sección Hero (Inicio) --- */
+.hero-section {
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(to right, #1a202c, #2d3748);
+  background-size: auto, cover;
+  color: var(--light-text);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.hero-content h3 {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* --- Sección Servicios --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  text-align: left;
+}
+
+.service-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.service-card ul {
+  list-style-type: '✔  ';
+  padding-left: 20px;
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta-section h4 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+/* --- Sección Proyectos --- */
+.bg-light {
+  background-color: var(--light-bg);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card h4 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.tech-tag {
+  background-color: #e2e8f0;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  align-self: flex-start;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.project-ideal {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* --- Sección Sobre Mí --- */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text .section-title {
+  text-align: left;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+/* --- Sección Contacto --- */
+.bg-dark {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+.bg-dark .section-intro, .bg-dark .contact-email {
+  color: #ccc;
+}
+
+.contact-email a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #4a5568;
+  background-color: #2d3748;
+  color: var(--light-text);
+  font-size: 1em;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a0aec0;
+}
+
+.contact-form button {
+  align-self: center;
+  cursor: pointer;
+  border: none;
+}
+
+/* --- Footer --- */
+.footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* --- Responsividad --- */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Simplificando para el ejemplo, podrías implementar un menú hamburguesa */
+  }
+
+  .hero-content h1 {
+      font-size: 2.5em;
+  }
+
+  .about-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-text {
+      text-align: center;
+  }
+
+  .about-text .section-title {
+      text-align: center;
+  }
+}
