@@ -307,6 +307,29 @@ body {
   border: none;
 }
 
+/* --- Estilos para la Página de Agradecimiento --- */
+.thank-you-section {
+  background: linear-gradient(to right, #1a202c, #2d3748);
+  color: var(--light-text);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.thank-you-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.thank-you-content p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
 /* --- Footer --- */
 .footer {
   background-color: #111;
