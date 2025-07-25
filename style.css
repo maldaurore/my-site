@@ -330,6 +330,10 @@ body {
   margin: 0 auto 40px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* --- Footer --- */
 .footer {
   background-color: #111;
